@@ -8,6 +8,8 @@ A localized product catalog with a TypeScript/Express API, MySQL persistence, Re
 2. Start the full stack with `docker compose up --build`.
 3. Visit <http://localhost:3000>. The API health endpoint is at <http://localhost:4000/health>.
 
+Redis is available to desktop clients at `localhost:7001` (no password).
+
 The first MySQL startup loads sample products in English, French, and German, with prices in USD, EUR, and GBP. MySQL initialization scripts only run when the data volume is first created.
 
 ## CI and image publishing
