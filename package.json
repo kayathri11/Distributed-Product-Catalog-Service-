@@ -1,0 +1,14 @@
+{
+  "name": "distributed-product-catalog",
+  "private": true,
+  "workspaces": [
+    "apps/api",
+    "apps/storefront"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace @catalog/api && npm run build --workspace @catalog/storefront",
+    "dev:api": "npm run dev --workspace @catalog/api",
+    "dev:storefront": "npm run dev --workspace @catalog/storefront",
+    "typecheck": "npm run typecheck --workspace @catalog/api && npm run typecheck --workspace @catalog/storefront"
+  }
+}
